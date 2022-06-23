@@ -27,15 +27,15 @@ namespace MusicPlayerTut
         {
 
         }
-        String[] paths,files;
+        String[] paths, files;
         private void btnSongImport_Click(object sender, EventArgs e)
         {
             OpenFileDialog ofd = new OpenFileDialog();
             ofd.Multiselect = true;
-            if (ofd.ShowDialog()==DialogResult.OK)
+            if (ofd.ShowDialog() == DialogResult.OK)
             {
-                 files = ofd.SafeFileNames;
-                 paths = ofd.FileNames;
+                files = ofd.SafeFileNames;
+                paths = ofd.FileNames;
                 for (int i = 0; i < files.Length; i++)
                 {
                     listBoxSongs.Items.Add(files[i]);
@@ -43,6 +43,20 @@ namespace MusicPlayerTut
 
             }
 
+        }
+        private void btnPlaySong_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                player.URL = paths[listBoxSongs.SelectedIndex];
+
+            }
+            catch (Exception b)
+            {
+
+                throw;
+            }
+            player.controls.play();
         }
 
         private void btnStop_Click(object sender, EventArgs e)
@@ -65,10 +79,5 @@ namespace MusicPlayerTut
             player.controls.next();
         }
 
-        private void btnPlaySong_Click(object sender, EventArgs e)
-        {
-            player.URL = paths[listBoxSongs.SelectedIndex];
-            player.controls.stop();
-        }
     }
 }

@@ -50,7 +50,9 @@
             // 
             // listBoxSongs
             // 
+            this.listBoxSongs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(31)))), ((int)(((byte)(40)))));
             this.listBoxSongs.Dock = System.Windows.Forms.DockStyle.Right;
+            this.listBoxSongs.ForeColor = System.Drawing.SystemColors.Menu;
             this.listBoxSongs.FormattingEnabled = true;
             this.listBoxSongs.ItemHeight = 15;
             this.listBoxSongs.Location = new System.Drawing.Point(480, 0);
@@ -124,6 +126,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(31)))), ((int)(((byte)(45)))));
             this.ClientSize = new System.Drawing.Size(668, 410);
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.btnPrev);
