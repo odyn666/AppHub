@@ -28,59 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.X = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.gameOptionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.newGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.A1 = new System.Windows.Forms.Button();
+            this.A2 = new System.Windows.Forms.Button();
+            this.A3 = new System.Windows.Forms.Button();
+            this.B1 = new System.Windows.Forms.Button();
+            this.B2 = new System.Windows.Forms.Button();
+            this.B3 = new System.Windows.Forms.Button();
+            this.C1 = new System.Windows.Forms.Button();
+            this.C2 = new System.Windows.Forms.Button();
+            this.C3 = new System.Windows.Forms.Button();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(112, 106);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(468, 229);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // button1
-            // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(550, 358);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.Location = new System.Drawing.Point(469, 358);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.Location = new System.Drawing.Point(388, 358);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
             // 
             // X
             // 
-            this.X.Location = new System.Drawing.Point(12, 12);
+            this.X.Location = new System.Drawing.Point(12, 27);
             this.X.Name = "X";
             this.X.Size = new System.Drawing.Size(75, 23);
             this.X.TabIndex = 4;
@@ -88,29 +56,169 @@
             this.X.UseVisualStyleBackColor = true;
             this.X.Click += new System.EventHandler(this.X_Click);
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.gameOptionsToolStripMenuItem,
+            this.helpToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(668, 24);
+            this.menuStrip1.TabIndex = 5;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // gameOptionsToolStripMenuItem
+            // 
+            this.gameOptionsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.newGameToolStripMenuItem});
+            this.gameOptionsToolStripMenuItem.Name = "gameOptionsToolStripMenuItem";
+            this.gameOptionsToolStripMenuItem.Size = new System.Drawing.Size(93, 20);
+            this.gameOptionsToolStripMenuItem.Text = "Game options";
+            // 
+            // newGameToolStripMenuItem
+            // 
+            this.newGameToolStripMenuItem.Name = "newGameToolStripMenuItem";
+            this.newGameToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
+            this.newGameToolStripMenuItem.Text = "New Game";
+            // 
+            // helpToolStripMenuItem
+            // 
+            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aboutToolStripMenuItem});
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem.Text = "Help";
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.aboutToolStripMenuItem.Text = "About";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
+            // 
+            // A1
+            // 
+            this.A1.Location = new System.Drawing.Point(211, 82);
+            this.A1.Name = "A1";
+            this.A1.Size = new System.Drawing.Size(75, 75);
+            this.A1.TabIndex = 6;
+            this.A1.UseVisualStyleBackColor = true;
+            this.A1.Click += new System.EventHandler(this.button_click);
+            // 
+            // A2
+            // 
+            this.A2.Location = new System.Drawing.Point(211, 163);
+            this.A2.Name = "A2";
+            this.A2.Size = new System.Drawing.Size(75, 75);
+            this.A2.TabIndex = 7;
+            this.A2.UseVisualStyleBackColor = true;
+            this.A2.Click += new System.EventHandler(this.button_click);
+            // 
+            // A3
+            // 
+            this.A3.Location = new System.Drawing.Point(211, 245);
+            this.A3.Name = "A3";
+            this.A3.Size = new System.Drawing.Size(75, 75);
+            this.A3.TabIndex = 8;
+            this.A3.UseVisualStyleBackColor = true;
+            this.A3.Click += new System.EventHandler(this.button_click);
+            // 
+            // B1
+            // 
+            this.B1.Location = new System.Drawing.Point(292, 82);
+            this.B1.Name = "B1";
+            this.B1.Size = new System.Drawing.Size(75, 75);
+            this.B1.TabIndex = 9;
+            this.B1.UseVisualStyleBackColor = true;
+            this.B1.Click += new System.EventHandler(this.button_click);
+            // 
+            // B2
+            // 
+            this.B2.Location = new System.Drawing.Point(293, 163);
+            this.B2.Name = "B2";
+            this.B2.Size = new System.Drawing.Size(75, 75);
+            this.B2.TabIndex = 10;
+            this.B2.UseVisualStyleBackColor = true;
+            this.B2.Click += new System.EventHandler(this.button_click);
+            // 
+            // B3
+            // 
+            this.B3.Location = new System.Drawing.Point(292, 245);
+            this.B3.Name = "B3";
+            this.B3.Size = new System.Drawing.Size(75, 75);
+            this.B3.TabIndex = 11;
+            this.B3.UseVisualStyleBackColor = true;
+            this.B3.Click += new System.EventHandler(this.button_click);
+            // 
+            // C1
+            // 
+            this.C1.Location = new System.Drawing.Point(373, 82);
+            this.C1.Name = "C1";
+            this.C1.Size = new System.Drawing.Size(75, 75);
+            this.C1.TabIndex = 12;
+            this.C1.UseVisualStyleBackColor = true;
+            this.C1.Click += new System.EventHandler(this.button_click);
+            // 
+            // C2
+            // 
+            this.C2.Location = new System.Drawing.Point(374, 163);
+            this.C2.Name = "C2";
+            this.C2.Size = new System.Drawing.Size(75, 75);
+            this.C2.TabIndex = 13;
+            this.C2.UseVisualStyleBackColor = true;
+            this.C2.Click += new System.EventHandler(this.button_click);
+            // 
+            // C3
+            // 
+            this.C3.Location = new System.Drawing.Point(373, 245);
+            this.C3.Name = "C3";
+            this.C3.Size = new System.Drawing.Size(75, 75);
+            this.C3.TabIndex = 14;
+            this.C3.UseVisualStyleBackColor = true;
+            this.C3.Click += new System.EventHandler(this.button_click);
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(668, 410);
+            this.Controls.Add(this.C3);
+            this.Controls.Add(this.C2);
+            this.Controls.Add(this.C1);
+            this.Controls.Add(this.B3);
+            this.Controls.Add(this.B2);
+            this.Controls.Add(this.B1);
+            this.Controls.Add(this.A3);
+            this.Controls.Add(this.A2);
+            this.Controls.Add(this.A1);
             this.Controls.Add(this.X);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form3";
             this.Text = "Form3";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.Form3_Load);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private DataGridView dataGridView1;
-        private Button button1;
-        private Button button2;
-        private Button button3;
         private Button X;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem gameOptionsToolStripMenuItem;
+        private ToolStripMenuItem newGameToolStripMenuItem;
+        private ToolStripMenuItem helpToolStripMenuItem;
+        private ToolStripMenuItem aboutToolStripMenuItem;
+        private Button A1;
+        private Button A2;
+        private Button A3;
+        private Button B1;
+        private Button B2;
+        private Button B3;
+        private Button C1;
+        private Button C2;
+        private Button C3;
     }
 }

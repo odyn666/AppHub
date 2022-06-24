@@ -339,7 +339,7 @@
             this.button3.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.button3.Size = new System.Drawing.Size(233, 40);
             this.button3.TabIndex = 1;
-            this.button3.Text = "button3";
+            this.button3.Text = "Tic Tac Toe";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -356,7 +356,7 @@
             this.button2.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.button2.Size = new System.Drawing.Size(233, 40);
             this.button2.TabIndex = 0;
-            this.button2.Text = "Player";
+            this.button2.Text = "Music Player";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -373,7 +373,7 @@
             this.btnMedia.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnMedia.Size = new System.Drawing.Size(233, 45);
             this.btnMedia.TabIndex = 0;
-            this.btnMedia.Text = "Media";
+            this.btnMedia.Text = "Programs";
             this.btnMedia.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMedia.UseVisualStyleBackColor = false;
             this.btnMedia.Click += new System.EventHandler(this.btnMedia_Click);
