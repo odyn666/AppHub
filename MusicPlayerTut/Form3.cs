@@ -14,6 +14,10 @@ namespace MusicPlayerTut
     {
         bool turn = true;//True = X turn, False = O turn
         int turn_count = 0;
+        //TODO win counter
+        int xwin_count= 0;
+        int owin_count = 0;
+        
         public Form3()
         {
             InitializeComponent();
@@ -53,6 +57,7 @@ namespace MusicPlayerTut
             turn = !turn;
             b.Enabled = false;
             turn_count++;
+            labelTurn.Text = "Turn count: " + turn_count;
             winner_check();
         }
         private void winner_check()
@@ -99,10 +104,14 @@ namespace MusicPlayerTut
                 if (!turn)
                 {
                     winner = "X";
+                    labelXwinCoutn.Text = "X win count: "+xwin_count;
+                    
                 }
                 else
                 {
                     winner = "O";
+                    labelOwinCoutn.Text = "O win count: " + owin_count;
+                    
                 }
                 disableButtons();
                 MessageBox.Show($"AND THE WINNER IS {winner}", "WE HAVE A WINNER");

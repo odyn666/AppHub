@@ -43,6 +43,9 @@
             this.C1 = new System.Windows.Forms.Button();
             this.C2 = new System.Windows.Forms.Button();
             this.C3 = new System.Windows.Forms.Button();
+            this.labelTurn = new System.Windows.Forms.Label();
+            this.labelXwinCoutn = new System.Windows.Forms.Label();
+            this.labelOwinCoutn = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -177,11 +180,41 @@
             this.C3.UseVisualStyleBackColor = true;
             this.C3.Click += new System.EventHandler(this.button_click);
             // 
+            // labelTurn
+            // 
+            this.labelTurn.AutoSize = true;
+            this.labelTurn.Location = new System.Drawing.Point(40, 98);
+            this.labelTurn.Name = "labelTurn";
+            this.labelTurn.Size = new System.Drawing.Size(77, 15);
+            this.labelTurn.TabIndex = 15;
+            this.labelTurn.Text = "Turn count: 0";
+            // 
+            // labelXwinCoutn
+            // 
+            this.labelXwinCoutn.AutoSize = true;
+            this.labelXwinCoutn.Location = new System.Drawing.Point(40, 163);
+            this.labelXwinCoutn.Name = "labelXwinCoutn";
+            this.labelXwinCoutn.Size = new System.Drawing.Size(82, 15);
+            this.labelXwinCoutn.TabIndex = 16;
+            this.labelXwinCoutn.Text = "X win count: 0";
+            // 
+            // labelOwinCoutn
+            // 
+            this.labelOwinCoutn.AutoSize = true;
+            this.labelOwinCoutn.Location = new System.Drawing.Point(40, 193);
+            this.labelOwinCoutn.Name = "labelOwinCoutn";
+            this.labelOwinCoutn.Size = new System.Drawing.Size(84, 15);
+            this.labelOwinCoutn.TabIndex = 17;
+            this.labelOwinCoutn.Text = "O win count: 0";
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(668, 410);
+            this.Controls.Add(this.labelOwinCoutn);
+            this.Controls.Add(this.labelXwinCoutn);
+            this.Controls.Add(this.labelTurn);
             this.Controls.Add(this.C3);
             this.Controls.Add(this.C2);
             this.Controls.Add(this.C1);
@@ -220,5 +253,8 @@
         private Button C1;
         private Button C2;
         private Button C3;
+        private Label labelTurn;
+        private Label labelXwinCoutn;
+        private Label labelOwinCoutn;
     }
 }
