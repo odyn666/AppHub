@@ -55,7 +55,7 @@
             this.X.Name = "X";
             this.X.Size = new System.Drawing.Size(75, 23);
             this.X.TabIndex = 4;
-            this.X.Text = "button4";
+            this.X.Text = "Close";
             this.X.UseVisualStyleBackColor = true;
             this.X.Click += new System.EventHandler(this.X_Click);
             // 
@@ -183,6 +183,7 @@
             // labelTurn
             // 
             this.labelTurn.AutoSize = true;
+            this.labelTurn.ForeColor = System.Drawing.SystemColors.Control;
             this.labelTurn.Location = new System.Drawing.Point(40, 98);
             this.labelTurn.Name = "labelTurn";
             this.labelTurn.Size = new System.Drawing.Size(77, 15);
@@ -192,6 +193,7 @@
             // labelXwinCoutn
             // 
             this.labelXwinCoutn.AutoSize = true;
+            this.labelXwinCoutn.ForeColor = System.Drawing.SystemColors.Control;
             this.labelXwinCoutn.Location = new System.Drawing.Point(40, 163);
             this.labelXwinCoutn.Name = "labelXwinCoutn";
             this.labelXwinCoutn.Size = new System.Drawing.Size(82, 15);
@@ -201,6 +203,7 @@
             // labelOwinCoutn
             // 
             this.labelOwinCoutn.AutoSize = true;
+            this.labelOwinCoutn.ForeColor = System.Drawing.SystemColors.Control;
             this.labelOwinCoutn.Location = new System.Drawing.Point(40, 193);
             this.labelOwinCoutn.Name = "labelOwinCoutn";
             this.labelOwinCoutn.Size = new System.Drawing.Size(84, 15);
@@ -211,6 +214,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(31)))), ((int)(((byte)(45)))));
             this.ClientSize = new System.Drawing.Size(668, 410);
             this.Controls.Add(this.labelOwinCoutn);
             this.Controls.Add(this.labelXwinCoutn);

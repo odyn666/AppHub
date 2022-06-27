@@ -277,7 +277,7 @@
             this.btnPlaylistManage.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnPlaylistManage.Size = new System.Drawing.Size(233, 45);
             this.btnPlaylistManage.TabIndex = 2;
-            this.btnPlaylistManage.Text = "Playlist Management";
+            this.btnPlaylistManage.Text = "Soon";
             this.btnPlaylistManage.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPlaylistManage.UseVisualStyleBackColor = false;
             this.btnPlaylistManage.Click += new System.EventHandler(this.btnPlaylistManage_Click);
@@ -323,9 +323,10 @@
             this.button4.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.button4.Size = new System.Drawing.Size(233, 40);
             this.button4.TabIndex = 2;
-            this.button4.Text = "button4";
+            this.button4.Text = "Drawing";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 

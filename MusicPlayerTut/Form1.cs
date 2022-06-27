@@ -91,5 +91,10 @@ namespace MusicPlayerTut
         {
             openChildForm(new Form3());
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            openChildForm(new DrawFrom());
+        }
     }
 }

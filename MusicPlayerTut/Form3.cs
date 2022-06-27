@@ -106,11 +106,13 @@ namespace MusicPlayerTut
                     winner = "X";
                     labelXwinCoutn.Text = "X win count: "+xwin_count;
                     
+                    
                 }
                 else
                 {
                     winner = "O";
                     labelOwinCoutn.Text = "O win count: " + owin_count;
+                    
                     
                 }
                 disableButtons();
@@ -132,6 +134,7 @@ namespace MusicPlayerTut
 
                     Button b = (Button)c;
                     b.Enabled = false;
+                    
                 }
             }
             catch { }
