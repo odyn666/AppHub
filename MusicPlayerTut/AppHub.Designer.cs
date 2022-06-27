@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panelSideMenu = new System.Windows.Forms.Panel();
             this.btnHelp = new System.Windows.Forms.Button();
             this.panelToolsSubMenu = new System.Windows.Forms.Panel();
@@ -51,7 +52,9 @@
             this.paneLogo = new System.Windows.Forms.Panel();
             this.panelPlayer = new System.Windows.Forms.Panel();
             this.panelChildForm = new System.Windows.Forms.Panel();
+            this.LabelTimer = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panelSideMenu.SuspendLayout();
             this.panelToolsSubMenu.SuspendLayout();
             this.panelPlaylistManageSubMenu.SuspendLayout();
@@ -186,7 +189,7 @@
             this.btnTools.Text = "Tools";
             this.btnTools.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTools.UseVisualStyleBackColor = false;
-            this.btnTools.Click += new System.EventHandler(this.btnTools_Click);
+            this.btnTools.Click += new System.EventHandler(this.BtnTools_Click);
             // 
             // panelPlaylistManageSubMenu
             // 
@@ -280,7 +283,7 @@
             this.btnPlaylistManage.Text = "Soon";
             this.btnPlaylistManage.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPlaylistManage.UseVisualStyleBackColor = false;
-            this.btnPlaylistManage.Click += new System.EventHandler(this.btnPlaylistManage_Click);
+            this.btnPlaylistManage.Click += new System.EventHandler(this.BtnPlaylistManage_Click);
             // 
             // panelMediaSubMenu
             // 
@@ -377,7 +380,7 @@
             this.btnMedia.Text = "Programs";
             this.btnMedia.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMedia.UseVisualStyleBackColor = false;
-            this.btnMedia.Click += new System.EventHandler(this.btnMedia_Click);
+            this.btnMedia.Click += new System.EventHandler(this.BtnMedia_Click);
             // 
             // paneLogo
             // 
@@ -400,12 +403,24 @@
             // panelChildForm
             // 
             this.panelChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(31)))), ((int)(((byte)(45)))));
+            this.panelChildForm.Controls.Add(this.LabelTimer);
             this.panelChildForm.Controls.Add(this.pictureBox1);
             this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelChildForm.Location = new System.Drawing.Point(250, 0);
             this.panelChildForm.Name = "panelChildForm";
             this.panelChildForm.Size = new System.Drawing.Size(684, 449);
             this.panelChildForm.TabIndex = 2;
+            // 
+            // LabelTimer
+            // 
+            this.LabelTimer.AutoSize = true;
+            this.LabelTimer.Font = new System.Drawing.Font("Bernard MT Condensed", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LabelTimer.ForeColor = System.Drawing.SystemColors.Control;
+            this.LabelTimer.Location = new System.Drawing.Point(536, 24);
+            this.LabelTimer.Name = "LabelTimer";
+            this.LabelTimer.Size = new System.Drawing.Size(123, 34);
+            this.LabelTimer.TabIndex = 1;
+            this.LabelTimer.Text = "Clock 24h";
             // 
             // pictureBox1
             // 
@@ -417,7 +432,11 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // Form1
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
+            // 
+            // AppHub
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -426,7 +445,7 @@
             this.Controls.Add(this.panelPlayer);
             this.Controls.Add(this.panelSideMenu);
             this.MinimumSize = new System.Drawing.Size(950, 600);
-            this.Name = "Form1";
+            this.Name = "AppHub";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panelSideMenu.ResumeLayout(false);
@@ -434,6 +453,7 @@
             this.panelPlaylistManageSubMenu.ResumeLayout(false);
             this.panelMediaSubMenu.ResumeLayout(false);
             this.panelChildForm.ResumeLayout(false);
+            this.panelChildForm.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -465,5 +485,7 @@
         private Panel panelPlayer;
         private Panel panelChildForm;
         private PictureBox pictureBox1;
+        private Label LabelTimer;
+        private System.Windows.Forms.Timer timer1;
     }
 }

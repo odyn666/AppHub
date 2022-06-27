@@ -1,20 +1,24 @@
-using System.Runtime.InteropServices;
-using System.Text;
-
 namespace MusicPlayerTut
 {
     public partial class AppHub : Form
     {
-        
+
         public AppHub()
         {
             InitializeComponent();
             CustomizeDesign();
+            
+            
         }
+        private void Timer1_Tick(object sender, EventArgs e)
+        {
+            LabelTimer.Text = DateTime.Now.ToString("HH:mm:ss");
 
+        }
+      
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            timer1.Start();
         }
 
         private void CustomizeDesign()
@@ -49,28 +53,28 @@ namespace MusicPlayerTut
             }
         }
 
-        private void btnMedia_Click(object sender, EventArgs e)
+        private void BtnMedia_Click(object sender, EventArgs e)
         {
             ShowSubMenu(panelMediaSubMenu);
         }
 
-        private void btnPlaylistManage_Click(object sender, EventArgs e)
+        private void BtnPlaylistManage_Click(object sender, EventArgs e)
         {
             ShowSubMenu(panelPlaylistManageSubMenu);
         }
 
-        private void btnTools_Click(object sender, EventArgs e)
+        private void BtnTools_Click(object sender, EventArgs e)
         {
             ShowSubMenu(panelToolsSubMenu);
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            openChildForm(new Form2());
+            OpenChildForm(new Form2());
         }
 
         private Form? activeForm = null;
-        private void openChildForm(Form childForm)
+        private void OpenChildForm(Form childForm)
         {
             if (activeForm != null)
             {
@@ -89,12 +93,13 @@ namespace MusicPlayerTut
 
         private void button3_Click(object sender, EventArgs e)
         {
-            openChildForm(new Form3());
+            OpenChildForm(new Form3());
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            openChildForm(new DrawFrom());
+            OpenChildForm(new DrawFrom());
         }
+
     }
 }
