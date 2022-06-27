@@ -7,18 +7,14 @@ namespace MusicPlayerTut
         {
             InitializeComponent();
             CustomizeDesign();
-            
-            
         }
-        private void Timer1_Tick(object sender, EventArgs e)
+        private void Time_tick()
         {
-            LabelTimer.Text = DateTime.Now.ToString("HH:mm:ss");
 
         }
-      
         private void Form1_Load(object sender, EventArgs e)
         {
-            timer1.Start();
+
         }
 
         private void CustomizeDesign()
@@ -53,7 +49,7 @@ namespace MusicPlayerTut
             }
         }
 
-        private void BtnMedia_Click(object sender, EventArgs e)
+        private void btnMedia_Click(object sender, EventArgs e)
         {
             ShowSubMenu(panelMediaSubMenu);
         }
@@ -100,6 +96,5 @@ namespace MusicPlayerTut
         {
             OpenChildForm(new DrawFrom());
         }
-
     }
 }
