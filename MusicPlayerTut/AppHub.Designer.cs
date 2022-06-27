@@ -1,6 +1,6 @@
 ﻿namespace MusicPlayerTut
 {
-    partial class Form1
+    partial class AppHub
     {
         /// <summary>
         ///  Required designer variable.

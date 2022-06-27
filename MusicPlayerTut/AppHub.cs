@@ -3,10 +3,10 @@ using System.Text;
 
 namespace MusicPlayerTut
 {
-    public partial class Form1 : Form
+    public partial class AppHub : Form
     {
         
-        public Form1()
+        public AppHub()
         {
             InitializeComponent();
             CustomizeDesign();
